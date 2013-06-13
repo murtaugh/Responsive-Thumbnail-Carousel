@@ -1,0 +1,168 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+
+<head data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Responsive Thumbnail Carousel</title>
+	
+	<link rel="stylesheet" href="_/css/carousel.css" />
+	
+	<style>
+		body {font-family: arial;}
+	</style>
+	
+	<script src="_/js/modernizr-2.6.2.dev.js"></script>
+
+</head>
+
+<body>
+	
+	<div class="carousel-container">
+
+		<h1>A Responsive Thumbnail Carousel</h1>
+		
+		<p>This is a basic jQuery-powered carousel. There are many like it, but this is mine.</p>
+	
+		<section class="thumb-carousel">
+		
+			<h2>9 items</h2>
+			
+			<div id="carousel-1" class="thumb-holder inactive">
+			
+				<ul>
+					<li>Item 1
+					<li>Item 2
+					<li>Item 3
+					<li>Item 4
+					<li>Item 5
+					<li>Item 6
+					<li>Item 7
+					<li>Item 8
+					<li>Item 9
+				</ul>
+			
+			</div>
+		
+		</section>
+	
+		<section class="thumb-carousel wider-thumbs">
+		
+			<h2>5 wider items</h2>
+			
+			<div id="carousel-2" class="thumb-holder inactive">
+			
+				<ul>
+					<li>Item 1
+					<li>Item 2
+					<li>Item 3
+					<li>Item 4
+					<li>Item 5
+				</ul>
+			
+			</div>
+		
+		</section>
+	
+		<section class="thumb-carousel width-75">
+		
+			<h2>5 items · 75% width</h2>
+			
+			<div id="carousel-3" class="thumb-holder inactive">
+			
+				<ul>
+					<li>Item 1
+					<li>Item 2
+					<li>Item 3
+					<li>Item 4
+					<li>Item 5
+				</ul>
+			
+			</div>
+		
+		</section>
+	
+		<section class="thumb-carousel width-50">
+		
+			<h2>9 items · 50% width</h2>
+			
+			<div id="carousel-4" class="thumb-holder inactive">
+			
+				<ul>
+					<li>Item 1
+					<li>Item 2
+					<li>Item 3
+					<li>Item 4
+					<li>Item 5
+					<li>Item 6
+					<li>Item 7
+					<li>Item 8
+					<li>Item 9
+				</ul>
+			
+			</div>
+		
+		</section>
+	
+		<section class="thumb-carousel width-25 narrower-thumbs">
+		
+			<h2>4 items · 25% width</h2>
+			
+			<div id="carousel-5" class="thumb-holder inactive">
+			
+				<ul>
+					<li>Item 1
+					<li>Item 2
+					<li>Item 3
+					<li>Item 4
+				</ul>
+			
+			</div>
+		
+		</section>
+		
+		<p>Some things I like about it:</p>
+		
+		<ul>
+			<li>Minimal HTML
+			<li>Graceful <code>overflow: auto</code> fallback for non-JS users
+			<li>CSS transitions for animations (uses Modernizr to serve jQuery animation fallback to non-transitioning browsers)
+			<li>Supports multiple carousels
+			<li>Supports carousels of any width, percentage or fixed
+			<li>Supports any number of items within the carousel
+			<li>Recalculates controls on window resize
+			<li>Makes the controls visible at all times for touch devices (again using Modernizr)
+			<li>If the controls aren't needed they don't appear at all
+		</ul>
+		
+		<p>Things I don't like about it:</p>
+		
+		<ul>
+			<li>Thumbnails within a carousel must be consistent widths
+			<li>The JS is pretty unsophisticated — it could be made more elegant
+			<li>It fails in IE8, but I haven't looked into why yet
+			<li>There seems to be a minor error in the control logic, but I haven't been able to nail it down
+		</ul>
+		
+		<p>Other stuff to know:</p>
+		
+		<ul>
+			<li>I've included <a href="https://github.com/mathiasbynens">@mathias</a>' <a href="https://github.com/mathiasbynens/jquery-noselect">noSelect</a> jQuery plugin to prevent annoying cursor/selection behavior while interacting with the controls; you might want to remove this depending on the content of your thumbnails
+		</ul>
+	
+	</div>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write("<script src='_/js/jquery-1.9.1.min.js'>\x3C/script>")</script>
+	<script src="_/js/functions.js"></script>
+  
+</body>
+</html>
