@@ -1,0 +1,155 @@
+.carousel-container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.thumb-carousel {
+	margin: 24px 0;
+	padding-bottom: 24px;
+	background: #eee;
+}
+
+.thumb-carousel.width-25 {
+	width: 25%;
+}
+
+.thumb-carousel.width-50 {
+	width: 50%;
+}
+
+.thumb-carousel.width-75 {
+	width: 75%;
+}
+
+.thumb-carousel h2 {
+	margin: 0 0 12px;
+	padding: 12px 18px 0;
+}
+
+.thumb-carousel .thumb-holder {
+	position: relative;
+	white-space: nowrap;
+}
+
+.thumb-carousel ul {
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+.no-js .thumb-carousel ul {
+	overflow: auto;
+}
+
+.thumb-carousel ul li {
+	position: relative;
+	display: inline-block;
+	width: 192px;
+	height: 144px;
+	margin-right: 14px;
+	background: #ccc;
+	color: #fff;
+	font: normal 12px/144px arial;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.thumb-carousel.wider-thumbs ul li {
+	width: 292px;
+}
+
+.thumb-carousel.narrower-thumbs ul li {
+	width: 92px;
+	height: 110px;
+	line-height: 110px;
+}
+
+.csstransitions .thumb-carousel ul li:first-child {
+	-webkit-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	-ms-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+}
+
+.thumb-carousel ul li:last-child {
+	margin-right: 0;
+}
+
+.thumb-nav {
+	position: absolute;
+	z-index: 100000;
+	top: 0;
+	height: 100%;
+	width: 60px;
+	background: #fff;
+	background: rgba(255,255,255,.7);
+	cursor: pointer;
+	
+	-webkit-backface-visibility: hidden;
+}
+
+.csstransitions .thumb-nav {
+	-webkit-transition: opacity .2s ease-in-out, background .2s ease-in-out;
+	-moz-transition: opacity .2s ease-in-out, background .2s ease-in-out;
+	-o-transition: opacity .2s ease-in-out, background .2s ease-in-out;
+	-ms-transition: opacity .2s ease-in-out, background .2s ease-in-out;
+	transition: opacity .2s ease-in-out, background .2s ease-in-out;
+}
+
+.no-touch .thumb-nav {
+	opacity: 0;
+}
+
+.thumb-carousel:hover .thumb-nav {
+	opacity: .9;
+}
+
+.thumb-carousel:hover .thumb-nav:hover {
+	opacity: 1;
+}
+
+.thumb-carousel:hover .thumb-nav:active {
+	background: #fff;
+	background: rgba(255,255,255,1);
+}
+
+.thumb-nav:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	height: 100%;
+	width: 100%;
+	font-size: 48px;
+	line-height: 144px;
+	text-align: center;
+}
+
+.narrower-thumbs .thumb-nav:before {
+	line-height: 110px;
+}
+
+.thumb-nav.right-side {
+	right: 0;
+}
+
+.thumb-nav.right-side:before {
+	content: "\00bb";
+}
+
+.thumb-nav.left-side {
+	left: 0;
+}
+
+.thumb-nav.left-side:before {
+	content: "\00bb";
+}
+
+.thumb-carousel .inactive .thumb-nav,
+.thumb-carousel .beginning .thumb-nav.left-side,
+.thumb-carousel .end .thumb-nav.right-side {
+	opacity: 0;
+	cursor: none;
+	pointer-events: none;
+}
