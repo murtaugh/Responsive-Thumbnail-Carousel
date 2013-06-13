@@ -143,7 +143,7 @@
 }
 
 .thumb-nav.left-side:before {
-	content: "\00bb";
+	content: "\00ab";
 }
 
 .thumb-carousel .inactive .thumb-nav,
