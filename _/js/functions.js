@@ -1,3 +1,9 @@
+
+
+var itemType = "li"; 	// the HTML element type of the items in the carousel
+						// feel free to use classes or other identifiers
+
+
 (function($){})(window.jQuery);
 
 $(document).ready(function (){
@@ -41,10 +47,10 @@ function resetThumbNavs() {
 	$(".thumb-holder").each(function(index) {
 	
 		scroller = $(this).attr("id");
-		positionMaster = $("#" + scroller + " li:first-of-type");
+		positionMaster = $("#" + scroller + " " + itemType + ":first-of-type");
 		scrollPosition = parseInt(positionMaster.css("margin-left"));
 		scrollDistance = parseInt(positionMaster.css("margin-right")) + parseInt(positionMaster.width());
-		collectionCount = parseInt($("#" + scroller + " li").length);
+		collectionCount = parseInt($("#" + scroller + " " + itemType).length);
 		collectionWidth = collectionCount * scrollDistance;
 		containerWidth = $("#" + scroller).width();
 		viewportHolds = Math.floor(containerWidth / scrollDistance);
@@ -87,7 +93,7 @@ function resetThumbNavs() {
 function triggerThumbNav(which) {
 
 	scroller = $(which).attr("data-for");
-	positionMaster = $("#" + scroller + " li:first-of-type");
+	positionMaster = $("#" + scroller + " " + itemType + ":first-of-type");
 	scrollPosition = parseInt(positionMaster.css("margin-left"));
 	scrollDistance = parseInt(positionMaster.css("margin-right")) + parseInt(positionMaster.width());
 	collectionCount = parseInt($("#" + scroller + " li").length);
