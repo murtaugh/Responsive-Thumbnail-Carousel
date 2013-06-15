@@ -148,6 +148,7 @@ header ul li + li {
 
 ul.buttons {
 	position: fixed;
+	z-index: 1000000;
 	top: 20px;
 	right: 20px;
 }
