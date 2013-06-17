@@ -3,6 +3,10 @@ Responsive-Thumbnail-Carousel
 
 <p>This is a basic jQuery-powered carousel. There are many like it, but this is mine.</p>
 
+<p>I know there are plenty of existing solutions for this sort of thing, but using someone else’s code is, for me, like wearing someone else’s clothes — it just doesn’t fit right.</p>
+
+<p>It’s not a jQuery plugin, just a set of functions, which (IMHO) makes t more accessible and easier to customize. That said, there’s plenty of work that could still be done to make it more elegant; please feel free to make suggestions!</p>
+
 <p>Some things I like about it:</p>
 
 <ul>
