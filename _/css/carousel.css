@@ -44,6 +44,7 @@
 .thumb-carousel ul li {
 	position: relative;
 	display: inline-block;
+	vertical-align: top;
 	width: 192px;
 	height: 144px;
 	margin-right: 14px;
@@ -52,6 +53,22 @@
 	font: normal 12px/144px arial;
 	text-align: center;
 	text-transform: uppercase;
+}
+
+.thumb-carousel.variable-heights ul li {
+	height: auto;
+	text-align: left;
+	white-space: normal;
+	line-height: 18px;
+}
+
+.thumb-carousel.variable-heights ul li h3,
+.thumb-carousel.variable-heights ul li p {
+	padding: 0 12px;
+}
+
+.thumb-carousel.variable-heights ul li p {
+	text-transform: none;
 }
 
 .thumb-carousel.wider-thumbs ul li {
@@ -89,6 +106,12 @@
 	-webkit-backface-visibility: hidden;
 }
 
+.variable-heights .thumb-nav {
+	top: 50%;
+	height: 60px;
+	margin-top: -30px;
+}
+
 .csstransitions .thumb-nav {
 	-webkit-transition: opacity .2s ease-in-out, background .2s ease-in-out;
 	-moz-transition: opacity .2s ease-in-out, background .2s ease-in-out;
@@ -124,6 +147,10 @@
 	font-size: 48px;
 	line-height: 144px;
 	text-align: center;
+}
+
+.variable-heights .thumb-nav:before {
+	line-height: 50px;
 }
 
 .narrower-thumbs .thumb-nav:before {
