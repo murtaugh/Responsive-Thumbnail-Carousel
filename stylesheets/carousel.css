@@ -54,6 +54,22 @@
 	text-transform: uppercase;
 }
 
+.thumb-carousel.variable-heights ul li {
+	height: auto;
+	text-align: left;
+	white-space: normal;
+	line-height: 18px;
+}
+
+.thumb-carousel.variable-heights ul li h3,
+.thumb-carousel.variable-heights ul li p {
+	padding: 0 12px;
+}
+
+.thumb-carousel.variable-heights ul li p {
+	text-transform: none;
+}
+
 .thumb-carousel.wider-thumbs ul li {
 	width: 292px;
 }
@@ -87,6 +103,12 @@
 	cursor: pointer;
 	
 	-webkit-backface-visibility: hidden;
+}
+
+.variable-heights .thumb-nav {
+	top: 50%;
+	height: 60px;
+	margin-top: -30px;
 }
 
 .csstransitions .thumb-nav {
@@ -128,6 +150,10 @@
 
 .narrower-thumbs .thumb-nav:before {
 	line-height: 110px;
+}
+
+.variable-heights .thumb-nav:before {
+	line-height: 50px;
 }
 
 .thumb-nav.right-side {
