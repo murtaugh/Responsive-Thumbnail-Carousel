@@ -44,6 +44,7 @@
 .thumb-carousel ul li {
 	position: relative;
 	display: inline-block;
+	vertical-align: top;
 	width: 192px;
 	height: 144px;
 	margin-right: 14px;
@@ -63,7 +64,8 @@
 
 .thumb-carousel.variable-heights ul li h3,
 .thumb-carousel.variable-heights ul li p {
-	padding: 0 12px;
+	margin: 12px;
+	color: #fff;
 }
 
 .thumb-carousel.variable-heights ul li p {
