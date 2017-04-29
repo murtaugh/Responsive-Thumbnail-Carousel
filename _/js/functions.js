@@ -4,9 +4,9 @@ var itemType = "li"; 	// the HTML element type of the items in the carousel
 						// feel free to use classes or other identifiers
 
 
-(function($){})(window.jQuery);
+(($ => {}))(window.jQuery);
 
-$(document).ready(function (){
+$(document).ready(() => {
 	
 	$(".thumb-holder").noSelect().on("click", ".thumb-nav", function() {
 		
@@ -22,7 +22,7 @@ $(document).ready(function (){
 
 });
 
-$(window).resize(function() {
+$(window).resize(() => {
 
 	if ($(".thumb-holder").length != 0) {
 	
@@ -32,7 +32,7 @@ $(window).resize(function() {
 	
 });
 
-$(window).load(function() {
+$(window).load(() => {
 
 	if ($(".thumb-holder").length != 0) {
 	
@@ -166,4 +166,4 @@ function triggerThumbNav(which) {
 };
 
 /*! http://mths.be/noselect v1.0.3 by @mathias */
-jQuery.fn.noSelect=function(){var a='none';return this.bind('selectstart dragstart mousedown',function(){return false}).css({MozUserSelect:a,msUserSelect:a,webkitUserSelect:a,userSelect:a})};
+jQuery.fn.noSelect=function(){var a='none';return this.bind('selectstart dragstart mousedown',() => false).css({MozUserSelect:a,msUserSelect:a,webkitUserSelect:a,userSelect:a});};
